@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-hover:hover, .navbar .container .collapse div a.btn:hover, .top button.btn:hover, .cont-img button.btn:hover, .cont-popular .card button.btn:hover, .cont-login .form-login form div button.form-btn:hover, .cont-dash button.dash-btn:hover, .cont-dash button.order-btn:hover, .cont-dash-btn button.dash-btn:hover, .d-btn .dropdown button.btn:hover, .d-btn .dropdown .dropdown-menu li a:hover, .form-load div button.btn:hover, .form-dash3 div button.btn:hover {
+  border: 1px solid black;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-animation-name: anim;
+          animation-name: anim;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes anim {
+  10% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  60% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    color: white;
+    background-color: #ff6600;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes anim {
+  10% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  60% {
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  100% {
+    color: white;
+    background-color: #ff6600;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+body {
+  background-color: #FC8F1A !important;
+}
+
+body a {
+  color: black;
+}
+
+body .offcanvas-body, body .offcanvas {
+  background-color: #FC8F1A;
+}
+
+body .offcanvas-body ul li a, body .offcanvas ul li a {
+  color: black;
+}
+
+.navbar .container a {
+  color: white;
+}
+
+.navbar .container .collapse ul li a {
+  color: white;
+}
+
+.navbar .container .collapse div a.btn {
+  color: black;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.top {
+  background-color: #FC8F1A;
+}
+
+.top button.btn {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: aliceblue;
+  padding: 10px 60px;
+  font-size: 30px;
+  border-radius: 30px;
+}
+
+.cont-img {
+  background-image: url("../img/food wallpaper 131 - 1920x1080.jpg");
+}
+
+.cont-img button.btn {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: #FC8F1A;
+  color: white;
+  padding: 10px 60px;
+  font-size: 30px;
+  border-radius: 30px;
+}
+
+.cont-popular {
+  margin-bottom: 5%;
+  padding-bottom: 20%;
+  padding-top: 10%;
+  background-color: white;
+}
+
+.cont-popular h1 {
+  color: #FC8F1A;
+}
+
+.cont-popular .card {
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  border-radius: 50px !important;
+}
+
+.cont-popular .card img {
+  border-radius: 50px 50px 0 50px !important;
+}
+
+.cont-popular .card button.btn {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #FC8F1A;
+  color: white;
+  padding: 10px 60px;
+  font-size: 30px;
+  border-radius: 30px;
+}
+
+.cont-popular .card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+footer {
+  background-color: #443B3D;
+}
+
+footer img {
+  width: 600px;
+}
+
+footer .row p span {
+  color: #FC8F1A;
+}
+
+.cont-login {
+  margin-top: 5%;
+}
+
+.cont-login .form-login form {
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(1px) saturate(180%);
+  -webkit-backdrop-filter: blur(1px) saturate(180%);
+  background-color: #ee592b;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+}
+
+.cont-login .form-login form div {
+  color: white;
+}
+
+.cont-login .form-login form div button.form-btn {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cont-login {
+    margin-top: 20%;
+  }
+  .cont-login .form-login {
+    width: 80%;
+  }
+}
+
+.cont-dash {
+  margin-top: 10%;
+}
+
+.cont-dash p, .cont-dash h4, .cont-dash h5, .cont-dash h3 {
+  color: #FC8F1A;
+}
+
+.cont-dash p.tit {
+  background-color: #ee592b;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.cont-dash button.dash-btn {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: aliceblue;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.cont-dash button.order-btn {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.cont-dash-btn {
+  margin-top: 10%;
+}
+
+.cont-dash-btn button.dash-btn {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: aliceblue;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+
+.cont-price {
+  margin-top: 5%;
+}
+
+.cont-price .dis-price {
+  margin-top: 3%;
+}
+
+.cont-price .dis-price p {
+  background-color: #ee592b;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.cont-price .dis-price a {
+  background-color: #ee592b;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.cont-price .dis-price img {
+  border-radius: 8px;
+}
+
+.d-btn .dropdown button.btn {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: aliceblue;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.d-btn .dropdown .dropdown-menu {
+  margin-top: 5px;
+  background-color: #ee592b;
+}
+
+.d-btn .dropdown .dropdown-menu li {
+  padding: 5px;
+}
+
+.d-btn .dropdown .dropdown-menu li a {
+  border-radius: 5px;
+}
+
+.form-load div button.btn {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: aliceblue;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.form-dash3 div button.form-btn-red-or {
+  color: aliceblue;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: #ff2600;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.form-dash3 div button.form-btn-green-or {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  background-color: #ffee00;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.form-dash3 div button.btn {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=main.css.map */

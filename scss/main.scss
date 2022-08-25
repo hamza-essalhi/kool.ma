@@ -1,0 +1,316 @@
+@import 'defult';
+$main-bg-color:#FC8F1A;
+$hover:#ee592b;
+
+
+.btn-hover:hover{
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+    animation-name: anim;
+  animation-duration: 0.5s;  
+  animation-fill-mode: forwards;
+}
+@keyframes anim {
+    10% {transform: rotate(0deg);}
+    30% { transform: rotate(6deg);}
+    60% { transform: rotate(-2deg);}
+    100%{color: white;background-color: rgb(255, 102, 0); transform: rotate(0deg)}
+    
+}
+
+body{
+    background-color: $main-bg-color !important;
+    a{
+        color: black;
+    }
+    .offcanvas-body,.offcanvas{
+        background-color: $main-bg-color;
+        ul{
+            li{
+               a{
+                color: black;
+               }
+            }
+        }
+    }
+}
+
+
+.navbar{
+    .container{
+        a{
+            color: white;
+        }
+        .collapse{
+            ul{
+                li{
+                    a{
+                        color: white;
+                    }
+                }
+            }
+            div{
+                a.btn{
+                    color: black;
+                    transition: transform 0.4s;
+                    background-color: aliceblue;
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    @extend .btn-hover
+                }
+            }
+
+        }
+        
+    }
+    
+}
+.top{
+    background-color: $main-bg-color;
+    button.btn{
+        transition: transform 0.4s;
+        background-color: aliceblue;
+        padding: 10px 60px;
+        font-size: 30px;
+        border-radius: 30px;
+        @extend .btn-hover
+    }
+    
+}
+
+.cont-img{
+    background-image: url('../img/food wallpaper 131 - 1920x1080.jpg');
+    button.btn{
+transition: transform 0.4s;
+        background-color: $main-bg-color;
+        color: white;
+        padding: 10px 60px;
+        font-size: 30px;
+        border-radius: 30px;
+        @extend .btn-hover
+
+    }
+}
+
+.cont-popular{
+    margin-bottom: 5%;
+    padding-bottom:20%;
+    padding-top: 10%;
+    background-color: white;
+    h1{
+        color: $main-bg-color;
+    }
+    
+     .card{
+        
+        transition: transform 0.8s;
+         border-radius: 50px !important;
+         img{
+            border-radius: 50px 50px 0 50px !important;
+         }
+         button.btn{
+            transition: 0.4s;
+            background-color: $main-bg-color;
+            color: white;
+            padding: 10px 60px;
+            font-size: 30px;
+            border-radius: 30px;
+            @extend .btn-hover
+    
+        }
+        &:hover{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            transform: scale(1.04);
+        }
+        
+            
+        
+    }
+}
+
+footer{
+    background-color: #443B3D;
+    img{
+        width: 600px;
+    }
+    .row{
+        p{
+            span{
+                color: $main-bg-color;
+            }
+        }
+    }
+}
+
+
+// login
+
+.cont-login{
+    margin-top: 5%;
+    .form-login{
+
+        
+        form{
+            color: white;
+            padding: 30px;
+        border-radius: 10px;
+            backdrop-filter: blur(1px) saturate(180%);
+            -webkit-backdrop-filter: blur(1px) saturate(180%);
+            background-color: $hover;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            overflow: hidden;
+            div{
+                color: white;
+                button.form-btn{
+                    transition: transform 0.4s;
+                    background-color: aliceblue;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    @extend .btn-hover
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .cont-login{
+        margin-top: 20%;
+        .form-login{
+            width: 80%;
+        }
+    }
+  }
+
+
+//dashboard
+
+.cont-dash{
+    margin-top: 10%;
+    p,h4,h5,h3{
+        color: $main-bg-color;
+    }
+    p.tit{
+        background-color: #ee592b;
+        padding: 5px;
+        border-radius: 5px;
+        
+    }
+    button.dash-btn{
+        transition: transform 0.4s;
+                    background-color: aliceblue;
+                    padding: 20px 40px;
+                    border-radius: 10px;
+                    @extend .btn-hover
+    }
+    button.order-btn{
+        transition: transform 0.4s;
+                    background-color: aliceblue;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    @extend .btn-hover
+    }
+}
+
+.cont-dash-btn{
+    margin-top: 10%;
+    button.dash-btn{
+        transition: transform 0.4s;
+                    background-color: aliceblue;
+                    padding: 10px 50px;
+                    border-radius: 10px;
+                    @extend .btn-hover
+    }
+}
+// price
+
+.cont-price{
+    margin-top: 5%;
+    .dis-price{
+        margin-top: 3%;
+        p{
+            background-color: #ee592b;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        a{
+            background-color: #ee592b;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        img{
+            border-radius: 8px;
+        }
+    }
+}
+
+.d-btn{
+    .dropdown{
+        button.btn{
+            transition: transform 0.4s;
+            background-color: aliceblue;
+            padding: 10px 10px;
+            border-radius: 10px;
+            @extend .btn-hover
+        }
+        .dropdown-menu{
+            margin-top: 5px;
+            background-color: #ee592b;
+            li{
+                padding: 5px;
+                
+                a{
+                    border-radius: 5px;
+                    @extend .btn-hover;
+                }
+            }
+        }
+    }
+    
+}
+.form-load{
+    div{
+        button.btn{
+            transition: transform 0.4s;
+            background-color: aliceblue;
+            padding: 10px 20px;
+            border-radius: 10px;
+            @extend .btn-hover
+        }
+
+    }
+    
+
+}
+
+.form-dash3{
+    div{
+        button.form-btn-red-or{
+            color: aliceblue;
+            transition: transform 0.4s;
+            background-color:rgb(255, 38, 0) ;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+        button.form-btn-green-or{
+            transition: transform 0.4s;
+            background-color:rgb(255, 238, 0) ;
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+        button.btn{
+           
+            transition: transform 0.4s;
+           
+            border-radius: 10px;
+            @extend .btn-hover
+        }
+
+    }
+
+}
